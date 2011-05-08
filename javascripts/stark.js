@@ -23,7 +23,7 @@ $(function() {
     event.preventDefault();
     history.pushState({ }, '', this.href)
     var slide_from = $(this).hasClass("stark-slide-in") ? "right" : "left";
-    $(this).parents("stark-nav-item").addClass("stark-active");
+    $(this).addClass("stark-active");
     slide(this.href, slide_from);
   });
 

@@ -4,6 +4,7 @@ body {
   font-family: "Droid Sans", "Arial", "sans-serif";
   width: 100%;
   overflow: hidden;
+  background-color: #fafafa;
 }
 
 .stark-page {
@@ -17,6 +18,22 @@ body {
 
 .stark-page section, .stark-page header, .stark-page footer {
   padding: 1em;
+}
+
+.stark-page header, .stark-page footer {
+  color: #fafafa;
+  background-color: #333;
+}
+
+.stark-page header a, .stark-page header a:visited, .stark-page footer, .stark-page footer a:visited {
+  color: #fafafa;
+}
+
+.stark-page header h1 {
+  font-size: 1em;
+  line-height: 1em;
+  margin: 0;
+  padding: 0;
 }
 
 .stark-current-page {
@@ -35,6 +52,42 @@ body {
   margin-left: 100%;
 }
 
+
+.stark-page nav ul {
+  margin: 0;
+  padding: 0;
+  border: 1px solid #cccccc;
+  border-radius: 0.5em;
+  background-color: white;
+  -webkit-background-clip: padding-box;
+  overflow: hidden;
+}
+
+.stark-page nav ul li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  border-bottom: 1px solid #cccccc;
+  display: block;
+}
+
+.stark-page nav ul li:last-child {
+  border-bottom: 0;
+}
+
+.stark-page nav ul li a, .stark-page nav ul li a:visited, .stark-page nav ul li a:hover {
+  color: #333333;
+  text-decoration: none;
+  padding: 0.5em 2em 0.5em 1em;
+  display: block;
+  background: transparent url(/images/stark/list_arrow_right.png) no-repeat center right;
+  -webkit-background-clip: padding-box;
+}
+
+a.stark-active {
+  color: #cccccc !important;
+  background-color: #333333 !important;
+}
 
 
 
