@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Droid Sans", "Arial", "sans-serif";
+  width: 100%;
+  overflow: hidden;
+}
+
+.stark-page {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  -webkit-transition: 0.5s ease-out;
+  -webkit-transition-property: margin-left;
+}
+
+.stark-page section, .stark-page header, .stark-page footer {
+  padding: 1em;
+}
+
+.stark-current-page {
+  margin-left: 0%;
+}
+
+.stark-hidden-page-left {
+  position: absolute;
+  top: 0;
+  margin-left: -100%;
+}
+
+.stark-hidden-page-right {
+  position: absolute;
+  top: 0;
+  margin-left: 100%;
+}
+
+
+
+
