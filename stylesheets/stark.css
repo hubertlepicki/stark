@@ -7,6 +7,10 @@ body {
   background-color: #fafafa;
 }
 
+.left { float: left }
+.right { float: right }
+.clear { clear: both }
+
 .stark-page {
   position: relative;
   margin: 0;
@@ -27,6 +31,13 @@ body {
 
 .stark-page header a, .stark-page header a:visited, .stark-page footer, .stark-page footer a:visited {
   color: #fafafa;
+}
+
+.stark-page header .stark-back-button {
+  float: left;
+  position: relative;
+  top: -0.5em;
+  left: -0.5em;
 }
 
 .stark-page header h1 {
@@ -89,5 +100,22 @@ a.stark-active {
   background-color: #333333 !important;
 }
 
-
+.stark-button {
+  display: inline-block;
+  color: #fafafa;
+  background: #333;
+  background: -webkit-gradient(linear, 0 0, 0 100%,
+              color-stop(0, rgba(60, 60, 60, 0.9)),
+              color-stop(0.5, rgba(55, 55, 55, 0.9)),
+              color-stop(0.5, rgba(44, 44, 44, 0.9)),
+              color-stop(1, rgba(33, 33, 33, 0.9)));
+  border: 0;
+  -webkit-border-radius: 0.5em;
+  -webkit-box-shadow: inset 1px 1px 1px 0px rgba(135, 135, 135, 0.1), inset -1px -1px 1px 0px rgba(135, 135, 135, 0.1);
+  padding: 0.5em 1em;
+  font-weight: lighter;
+  text-decoration: none;
+  line-height: 1em;
+  text-shadow: 0px -1px 1px rgba(0, 0, 0, .8), 0 1px 1px rgba(255, 255, 255, 0.3);
+}
 
