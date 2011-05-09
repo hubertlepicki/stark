@@ -8,9 +8,6 @@ $(function() {
         target_page.html(data);
         previous_page.css({"margin-left": slide_from == "right" ? "-100%" : "100%"});
         target_page.css({"margin-left": "0px"});
-        if (target_page.height() > previous_page.height()) {
-          previous_page.css({"height": target_page.height() + "px"});
-        }
         setTimeout(function() {
           $(target_page).removeClass("stark-hidden-page-"+slide_from);
           $(target_page).addClass("stark-current-page");
@@ -27,7 +24,8 @@ $(function() {
 
   $("a.stark-slide-in, a.stark-slide-out").live("click", function(event) {
     event.preventDefault();
-    history.pushState({ }, '', this.href)
+    if (history.pushState)
+      history.pushState({ }, '', this.href)
     var slide_from = $(this).hasClass("stark-slide-in") ? "right" : "left";
     $(this).addClass("stark-active");
     slide(this.href, slide_from);

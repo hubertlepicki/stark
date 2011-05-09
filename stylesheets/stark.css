@@ -23,6 +23,7 @@ body {
 
 .stark-page section, .stark-page header, .stark-page footer {
   padding: 1em;
+  display: block;
 }
 
 .stark-page header, .stark-page footer {
